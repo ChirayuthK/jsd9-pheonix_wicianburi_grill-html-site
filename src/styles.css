@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+  --clr-primary: #FAF9F6;
+  --clr-secondary: #242124;
+  --clr-accent: #FF9F00;
+  --clr-gray: #D9D9D9;
+  --clr-white: #FCFCFC;
+  --clr-gray-400: #888;
+}
