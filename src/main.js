@@ -168,3 +168,81 @@ class FooterBar extends HTMLElement {
     }
 }
 customElements.define('footer-bar', FooterBar)
+
+
+// Main button component
+class ButtonMain extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const buttonText = this.textContent || 'Sign in';
+        const extraClasses = this.getAttribute('class') || '';
+        this.innerHTML = `<button class="btn-main ${extraClasses}">${buttonText}</button>`
+    }
+}
+customElements.define('button-main', ButtonMain)
+
+
+// Secondary button component
+class ButtonSecondary extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const buttonText = this.textContent || 'Sign in';
+        const extraClasses = this.getAttribute('class') || '';
+        this.innerHTML = `<button class="btn-secondary ${extraClasses}">${buttonText}</button>`
+    }
+}
+customElements.define('button-secondary', ButtonSecondary)
+
+// Third button component
+class ButtonThird extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const buttonText = this.textContent || 'Sign in';
+        const extraClasses = this.getAttribute('class') || '';
+        this.innerHTML = `<button class="btn-third ${extraClasses}">${buttonText}</button>`
+    }
+}
+customElements.define('button-third', ButtonThird)
+
+// Google button component
+class ButtonGoogle extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const extraClasses = this.getAttribute('class') || '';
+        this.innerHTML = `<button class="btn-google ${extraClasses}"><img src="/assets/icon-google.svg" alt=""> Sign in with Google</button>`
+    }
+}
+customElements.define('button-google', ButtonGoogle)
+
+// Facebook button component
+class ButtonFacebook extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const extraClasses = this.getAttribute('class') || '';
+
+        this.innerHTML = `<button class="btn-facebook ${extraClasses}"><img src="/assets/icon-facebook.svg" alt=""> Sign in with Facebook</button>`
+    }
+}
+customElements.define('button-facebook', ButtonFacebook)
+
+// ADD button component
+class ButtonADD extends HTMLElement {
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        const extraClasses = this.getAttribute('class') || '';
+        this.innerHTML = `<button class="btn-add ${extraClasses}">+ ADD</button>`
+    }
+}
+customElements.define('button-add', ButtonADD)

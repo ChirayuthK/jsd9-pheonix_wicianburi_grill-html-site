@@ -30,6 +30,82 @@
     font-size: 0.7rem;
     font-weight: 500;
   }
+  /* Base button styles */
+[class^="btn-"] {
+  display: block;
+  cursor: pointer;
+  padding: 1rem;
+  min-width: 15rem;
+  border-radius: 0.75rem;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+/* Active state for all buttons */
+[class^="btn-"]:active {
+  transform: scale(0.98);
+}
+
+/* Main button */
+.btn-main {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+.btn-main:hover {
+  background-color: #e99000;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+.btn-secondary:hover {
+  background-color: #1b1b1b;
+}
+
+/* Third button */
+.btn-third {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  padding: 0.8rem;
+  border: 0.2rem solid var(--clr-secondary);
+}
+.btn-third:hover {
+  background-color: #ececec;
+}
+
+/* Social media buttons common styles */
+.btn-google,
+.btn-facebook {
+  background-color: #f3f9fa;
+  color: var(--clr-secondary);
+  padding: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.088);
+}
+
+.btn-google:hover,
+.btn-facebook:hover {
+  background-color: #edf1f2;
+}
+
+.btn-google > img,
+.btn-facebook > img {
+  display: inline;
+}
+
+/* Add button */
+.btn-add {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  padding: 0.8rem;
+  min-width: 5.625rem;
+  border: 0.1rem solid var(--clr-secondary);
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.088);
+}
+.btn-add:hover {
+  background-color: #ececec;
+}
+
 }
 
 .material-symbols-outlined {
