@@ -16,6 +16,20 @@
     font-family: var(--ff-main);
     background-color: var(--clr-primary)
   }
+  footer {
+    background-color: var(--clr-gray);
+  }
+}
+
+@layer components {
+  .footer-header {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .footer-li {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
 }
 
 .material-symbols-outlined {
