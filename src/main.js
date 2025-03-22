@@ -178,7 +178,18 @@ class ButtonMain extends HTMLElement {
     connectedCallback() {
         const buttonText = this.textContent || 'Sign in';
         const extraClasses = this.getAttribute('class') || '';
-        this.innerHTML = `<button class="btn-main ${extraClasses}">${buttonText}</button>`
+        const href = this.getAttribute('href') || '#';
+        const target = this.getAttribute('target') || '_self';
+        this.innerHTML = `
+            <a href="${href}"
+                target="${target}"
+                class="btn-main ${extraClasses}">
+                ${buttonText}
+            </a>
+        `
+    }
+    static get observedAttributes() {
+        return ['href', 'class', 'target'];
     }
 }
 customElements.define('button-main', ButtonMain)
@@ -192,7 +203,18 @@ class ButtonSecondary extends HTMLElement {
     connectedCallback() {
         const buttonText = this.textContent || 'Sign in';
         const extraClasses = this.getAttribute('class') || '';
-        this.innerHTML = `<button class="btn-secondary ${extraClasses}">${buttonText}</button>`
+        const href = this.getAttribute('href') || '#';
+        const target = this.getAttribute('target') || '_self';
+        this.innerHTML = `
+            <a href="${href}"
+                target="${target}"
+                class="btn-secondary ${extraClasses}">
+                ${buttonText}
+            </a>
+        `
+    }
+    static get observedAttributes() {
+        return ['href', 'class', 'target'];
     }
 }
 customElements.define('button-secondary', ButtonSecondary)
@@ -205,7 +227,18 @@ class ButtonThird extends HTMLElement {
     connectedCallback() {
         const buttonText = this.textContent || 'Sign in';
         const extraClasses = this.getAttribute('class') || '';
-        this.innerHTML = `<button class="btn-third ${extraClasses}">${buttonText}</button>`
+        const href = this.getAttribute('href') || '#';
+        const target = this.getAttribute('target') || '_self';
+        this.innerHTML = `
+            <a href="${href}"
+                target="${target}"
+                class="btn-third ${extraClasses}">
+                ${buttonText}
+            </a>
+        `
+    }
+    static get observedAttributes() {
+        return ['href', 'class', 'target'];
     }
 }
 customElements.define('button-third', ButtonThird)
