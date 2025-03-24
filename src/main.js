@@ -11,3 +11,12 @@ import './components/navigation/NavBar.js';
 
 // Import footer
 import './components/footer/FooterBar.js';
+
+// Import slideshow functions
+import { currentSlide, initSlideshow, plusSlides } from './utils/slideshow/Slideshow.js';
+
+// Make functions available globally for HTML onclick
+window.plusSlides = plusSlides;
+window.currentSlide = currentSlide;
+
+document.addEventListener('DOMContentLoaded', initSlideshow)
