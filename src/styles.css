@@ -198,17 +198,17 @@
 	outline: red solid 1px;
 } */
 
-.btn-add {
+/* .btn-add {
   color: var(--clr-primary);
   background-color: var(--clr-accent);
-}
+} */
 
 .card__product-mobile{
   border: solid black 1px;
 }
 
 .card__product-mobile:hover {
-  background-color: #888;
+  background-color: #a3a1a17c;
 }
 
 .dropdown {
