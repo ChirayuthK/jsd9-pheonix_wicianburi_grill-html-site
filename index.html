@@ -28,11 +28,11 @@
         <nav-bar></nav-bar>
         <main>
 
-            <!-- product-card -->
+            <!-- product-card mobile -->
 
-            <section class="flex justify-center">
-                <div class="flex flex-col sm:w-6xl">
-                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3 sm:w-1/2">
+            <section class="flex justify-center sm:hidden">
+                <div class="flex flex-col">
+                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3">
                     <div class="flex flex-col mx-6">
                         <ul class="flex mt-8">
                             <li><a href="" class="text-sm">Home/</a></li>
@@ -60,10 +60,41 @@
                 </div>
             </section>
 
-            <!-- decription/rice properties -->
+            <!-- product-card desktop -->
 
-            <section class="flex flex-col mx-6 mb-4">
-                <!-- Accordion -->
+            <section class="hidden sm:flex justify-center">
+                <div class="flex my-8 w-6xl">
+                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3 w-1/2">
+                    <div class="flex flex-col mx-6">
+                        <ul class="flex mt-8">
+                            <li><a href="" class="text-sm">Home/</a></li>
+                            <li><a href="" class="text-sm">Product/</a></li>
+                            <li><a href="" class="text-sm">Rice</a></li>
+                        </ul>
+                        <h2 class="text-3xl font-medium mt-4 mb-2">Rice</h2>
+                        <h3 class="text-2xl font-medium">Price</h3>
+                        <ul>
+                            <li class="my-4">Same or Next Day Delivery</li>
+                            <li class="mb-4">Easy 7 Returns</li>
+                            <li class="mb-4">Available for Delivery</li>
+                        </ul>
+                        <div class="flex items-center mt-2 mb-6 border border-gray-300 rounded-md w-fit">
+                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-r border-gray-300">
+                                -
+                            </button>
+                            <div class="w-12 h-12 flex justify-center items-center text-center">0</div>
+                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-l border-gray-300">
+                                +
+                            </button>
+                        </div>
+                        <button-main class="mb-4 text-lg font-semibold">Add to cart</button-main>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Accordion decription/rice properties/review -->
+
+            <section class="flex flex-col mx-3 mb-4">
                 <div class="">
                 <!-- Item 1 -->
                     <div class="rounded-lg">
@@ -83,6 +114,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Item 2 -->
                     <div class="rounded-lg">
                         <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(2)">
                             <svg id="icon-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,6 +132,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Item 3 -->
                     <div class="rounded-lg">
                         <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(3)">
                             <svg id="icon-3" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -119,6 +152,103 @@
                     </div>
                 </div>
             </section>
+
+              <!-- section reccommended -->
+
+              <section class="sm:flex justify-center mt-15 mb-8">
+                <div class="sm:grid grid-cols-3 min-w-4xl">
+                    <article class="flex flex-col mx-3">
+                        <h3 class="mb-4 text-base font-medium">FEATURED</h3>
+                        <div class="product-recom pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 mb-6 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </article> 
+                    <article class="flex flex-col mx-3">
+                        <h3 class="mb-4 text-base font-medium">BEST SELLER</h3>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 mb-6 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </article> 
+                    <article class="flex flex-col mx-3">
+                        <h3 class="mb-4 text-base font-medium">TOP RATE</h3>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 mb-6 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </article> 
+                </div>
+             </section>
         </main>
         <footer-bar></footer-bar>
         <script>
