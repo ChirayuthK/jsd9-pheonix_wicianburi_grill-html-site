@@ -27,10 +27,107 @@
     <body>
         <nav-bar></nav-bar>
         <main>
-            <section class="flex flex-col items-center">
-                <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3">
+
+            <!-- product-card -->
+
+            <section class="flex justify-center">
+                <div class="flex flex-col sm:w-6xl">
+                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3 sm:w-1/2">
+                    <div class="flex flex-col mx-6">
+                        <ul class="flex mt-8">
+                            <li><a href="" class="text-sm">Home/</a></li>
+                            <li><a href="" class="text-sm">Product/</a></li>
+                            <li><a href="" class="text-sm">Rice</a></li>
+                        </ul>
+                        <h2 class="text-3xl font-medium mt-4 mb-2">Rice</h2>
+                        <h3 class="text-2xl font-medium">Price</h3>
+                        <ul>
+                            <li class="my-4">Same or Next Day Delivery</li>
+                            <li class="mb-4">Easy 7 Returns</li>
+                            <li class="mb-4">Available for Delivery</li>
+                        </ul>
+                        <div class="flex items-center mt-2 mb-6 border border-gray-300 rounded-md w-fit">
+                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-r border-gray-300">
+                                -
+                            </button>
+                            <div class="w-12 h-12 flex justify-center items-center text-center">0</div>
+                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-l border-gray-300">
+                                +
+                            </button>
+                        </div>
+                        <button-main class="mb-4 text-lg font-semibold">Add to cart</button-main>
+                    </div>
+                </div>
+            </section>
+
+            <!-- decription/rice properties -->
+
+            <section class="flex flex-col mx-6 mb-4">
+                <!-- Accordion -->
+                <div class="">
+                <!-- Item 1 -->
+                    <div class="rounded-lg">
+                        <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(1)">
+                            <svg id="icon-1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span>Description</span>
+                        </button>
+                        <div id="content-1" class="hidden p-4 text-gray-700 bg-white">
+                            <ul class="list-disc list-inside">
+                                <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                                <li>ข้าวสดใหม่ต้นฤดู</li>
+                                <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                                <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
+                                <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-lg">
+                        <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(2)">
+                            <svg id="icon-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span>Rice Properties</span>
+                        </button>
+                        <div id="content-2" class="hidden p-4 text-gray-700 bg-white">
+                            <ul class="list-disc list-inside">
+                                <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                                <li>ข้าวสดใหม่ต้นฤดู</li>
+                                <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                                <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
+                                <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-lg">
+                        <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(3)">
+                            <svg id="icon-3" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span>Review</span>
+                        </button>
+                        <div id="content-3" class="hidden p-4 text-gray-700 bg-white">
+                            <ul class="list-disc list-inside">
+                                <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                                <li>ข้าวสดใหม่ต้นฤดู</li>
+                                <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                                <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
+                                <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer-bar></footer-bar>
+        <script>
+            function toggleAccordion(index) {
+              const content = document.getElementById(`content-${index}`);
+              const icon = document.getElementById(`icon-${index}`);
+              content.classList.toggle('hidden');
+              icon.classList.toggle('rotate-180');
+            }
+        </script>
     </body>
 </html>
