@@ -28,45 +28,13 @@
         <nav-bar></nav-bar>
         <main>
 
-            <!-- product-card mobile -->
+            <!-- product-card -->
 
-            <section class="flex justify-center sm:hidden">
-                <div class="flex flex-col">
-                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3">
-                    <div class="flex flex-col mx-6">
-                        <ul class="flex mt-8">
-                            <li><a href="" class="text-sm">Home/</a></li>
-                            <li><a href="" class="text-sm">Product/</a></li>
-                            <li><a href="" class="text-sm">Rice</a></li>
-                        </ul>
-                        <h2 class="text-3xl font-medium mt-4 mb-2">Rice</h2>
-                        <h3 class="text-2xl font-medium">Price</h3>
-                        <ul>
-                            <li class="my-4">Same or Next Day Delivery</li>
-                            <li class="mb-4">Easy 7 Returns</li>
-                            <li class="mb-4">Available for Delivery</li>
-                        </ul>
-                        <div class="flex items-center mt-2 mb-6 border border-gray-300 rounded-md w-fit">
-                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-r border-gray-300">
-                                -
-                            </button>
-                            <div class="w-12 h-12 flex justify-center items-center text-center">0</div>
-                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-l border-gray-300">
-                                +
-                            </button>
-                        </div>
-                        <button-main class="mb-4 text-lg font-semibold">Add to cart</button-main>
-                    </div>
-                </div>
-            </section>
-
-            <!-- product-card desktop -->
-
-            <section class="hidden sm:flex justify-center">
-                <div class="flex my-8 w-6xl">
-                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="px-3 w-1/2">
-                    <div class="flex flex-col mx-6">
-                        <ul class="flex mt-8">
+            <section class="flex justify-center">
+                <div class="sm:grid grid-cols-2 w-4xl mx-6">
+                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="w-auto h-auto sm:my-6">
+                    <div class="mx-8 my-6 sm:px-6">
+                        <ul class="flex">
                             <li><a href="" class="text-sm">Home/</a></li>
                             <li><a href="" class="text-sm">Product/</a></li>
                             <li><a href="" class="text-sm">Rice</a></li>
@@ -94,7 +62,7 @@
 
             <!-- Accordion decription/rice properties/review -->
 
-            <section class="flex flex-col mx-3 mb-4">
+            <section class="flex flex-col mx-6 mb-4 sm:hidden">
                 <div class="">
                 <!-- Item 1 -->
                     <div class="rounded-lg">
@@ -153,10 +121,39 @@
                 </div>
             </section>
 
+            <!-- Tabs -->
+
+            <section class="hidden sm:flex flex-col max-w-4xl mx-auto ">
+                <div class="flex">
+                  <button class="tab-btn py-4 hover:text-[#FF9F00]" data-tab="description">Description</button>
+                  <button class="tab-btn px-8 py-4 hover:text-[#FF9F00]" data-tab="properties">Rice Properties</button>
+                  <button class="tab-btn py-4 hover:text-[#FF9F00]" data-tab="review">Review</button>
+                </div>
+            
+                <!-- Tab Content -->
+                <div id="description" class="tab-content mt-4">
+                  <ul class="list-disc list-inside">
+                    <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                    <li>ข้าวสดใหม่ต้นฤดู</li>
+                    <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                    <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
+                    <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                  </ul>
+                </div>
+            
+                <div id="properties" class="tab-content mt-4 hidden">
+                  <p class="">ข้อมูลเกี่ยวกับคุณสมบัติของข้าว เช่น ความหอม ความนุ่ม และการดูดซึมน้ำ</p>
+                </div>
+            
+                <div id="review" class="tab-content mt-4 hidden">
+                  <p class="">รีวิวจากผู้ใช้งาน เช่น "ข้าวคุณภาพดีมาก", "หอมและนุ่มมาก"</p>
+                </div>
+            </section>
+
               <!-- section reccommended -->
 
               <section class="sm:flex justify-center mt-15 mb-8">
-                <div class="sm:grid grid-cols-3 min-w-4xl">
+                <div class="sm:grid grid-cols-3 sm:w-4xl">
                     <article class="flex flex-col mx-3">
                         <h3 class="mb-4 text-base font-medium">FEATURED</h3>
                         <div class="product-recom pr-3 py-2 border-b-[0.2px]">
@@ -249,8 +246,10 @@
                     </article> 
                 </div>
              </section>
+
         </main>
         <footer-bar></footer-bar>
+
         <script>
             function toggleAccordion(index) {
               const content = document.getElementById(`content-${index}`);
@@ -258,6 +257,22 @@
               content.classList.toggle('hidden');
               icon.classList.toggle('rotate-180');
             }
+
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+        
+            tabButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                // Remove active state from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('border-blue-600', 'text-blue-600'));
+                // Hide all contents
+                tabContents.forEach(content => content.classList.add('hidden'));
+        
+                // Activate the current tab
+                button.classList.add('border-blue-600', 'text-blue-600');
+                document.getElementById(button.dataset.tab).classList.remove('hidden');
+              });
+            });
         </script>
     </body>
 </html>
