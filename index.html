@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page | All Rice</title>
+        <link
+            rel="shortcut icon"
+            href="assets/logo-all_rice-white.svg"
+            type="image/x-icon"
+        />
+        <link href="/src/styles.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <script type="module" src="/src/main.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/46a3da17ee.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav-bar></nav-bar>
+        <main>
+            <section
+                class="flex flex-col sm:flex-row-reverse sm:justify-center sm:items-center sm:gap-8 sm:p-18 sm:mx-auto"
+                id="hero"
+            >
+                <img
+                    src="https://t3.ftcdn.net/jpg/02/71/72/06/360_F_271720694_xeOnMuwr2oiP9PG7yn8cKet1upl76QOu.jpg"
+                    alt="Rice Farm"
+                    class="object-contain sm:w-3/4"
+                />
+                <article class="px-4 py-8 sm:px-0 sm:text-left" id="hero-texts">
+                    <h1 class="font-bold text-3xl mb-6 sm:text-4xl">
+                        Handpicked by Farmers, Delivered to You
+                    </h1>
+                    <p class="mb-6">
+                        Experience the difference of rice grown with passion and
+                        delivered directly from our farms.
+                    </p>
+                    <button-main class="block mx-auto w-3/4 sm:mx-0"
+                        >Browse Now</button-main
+                    >
+                </article>
+            </section>
+            <section class="slideshow-container sm:py-12 px-8">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img
+                        src="https://placehold.co/600x400"
+                        style="width: 100%"
+                    />
+                    <div class="caption-text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img
+                        src="https://placehold.co/600x400"
+                        style="width: 100%"
+                    />
+                    <div class="caption-text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img
+                        src="https://placehold.co/600x400"
+                        style="width: 100%"
+                    />
+                    <div class="caption-text">Caption Three</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <section id="recommend" class="max-w-4xl mx-auto sm:mb-16">
+                <div class="px-4 py-6" id="best-seller">
+                    <div
+                        id="best-seller-head"
+                        class="flex justify-between items-center mb-6"
+                    >
+                        <div class="w-full h-0.5 bg-black"></div>
+                        <h2 class="uppercase text-2xl text-nowrap mx-4">
+                            Best Sellers
+                        </h2>
+                        <div class="w-full h-0.5 bg-black"></div>
+                    </div>
+                    <div id="items" class="flex flex-col gap-4 sm:flex-row">
+                        <div
+                            class="flex p-6 border-1 gap-10 sm:w-70 sm:h-fit sm:relative sm:p-0"
+                        >
+                            <img
+                                class="w-1/3 sm:w-full sm:mt-24 sm:mb-20 sm:px-8"
+                                src="https://placehold.co/400"
+                                alt=""
+                            />
+                            <div class="product-info flex flex-col gap-2">
+                                <h3
+                                    class="font-bold sm:absolute sm:top-4 sm:left-4"
+                                >
+                                    rice 01
+                                </h3>
+                                <p class="sm:absolute sm:top-10 sm:left-4">
+                                    100 Baht
+                                </p>
+                                <button-add
+                                    class="block sm:absolute sm:right-3 sm:bottom-3"
+                                ></button-add>
+                            </div>
+                        </div>
+                        <div
+                            class="flex p-6 border-1 gap-10 sm:w-70 sm:h-fit sm:relative sm:p-0"
+                        >
+                            <img
+                                class="w-1/3 sm:w-full sm:mt-24 sm:mb-20 sm:px-8"
+                                src="https://placehold.co/400"
+                                alt=""
+                            />
+                            <div class="product-info flex flex-col gap-2">
+                                <h3
+                                    class="font-bold sm:absolute sm:top-4 sm:left-4"
+                                >
+                                    rice 02
+                                </h3>
+                                <p class="sm:absolute sm:top-10 sm:left-4">
+                                    100 Baht
+                                </p>
+                                <button-add
+                                    class="block sm:absolute sm:right-3 sm:bottom-3"
+                                ></button-add>
+                            </div>
+                        </div>
+                        <div
+                            class="flex p-6 border-1 gap-10 sm:w-70 sm:h-fit sm:relative sm:p-0"
+                        >
+                            <img
+                                class="w-1/3 sm:w-full sm:mt-24 sm:mb-20 sm:px-8"
+                                src="https://placehold.co/400"
+                                alt=""
+                            />
+                            <div class="product-info flex flex-col gap-2">
+                                <h3
+                                    class="font-bold sm:absolute sm:top-4 sm:left-4"
+                                >
+                                    rice 03
+                                </h3>
+                                <p class="sm:absolute sm:top-10 sm:left-4">
+                                    100 Baht
+                                </p>
+                                <button-add
+                                    class="block sm:absolute sm:right-3 sm:bottom-3"
+                                ></button-add>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-6" id="top-rated">
+                    <div
+                        class="flex justify-between items-center mb-6"
+                        id="top-rated-head"
+                    >
+                        <div class="w-full h-0.5 bg-black"></div>
+                        <h2 class="uppercase text-2xl text-nowrap mx-4">
+                            Top Rates
+                        </h2>
+                        <div class="w-full h-0.5 bg-black"></div>
+                    </div>
+                    <div id="items" class="flex flex-col gap-4 sm:flex-row">
+                        <div
+                            class="flex p-6 border-1 gap-10 sm:w-70 sm:h-fit sm:relative sm:p-0"
+                        >
+                            <img
+                                class="w-1/3 sm:w-full sm:mt-24 sm:mb-20 sm:px-8"
+                                src="https://placehold.co/400"
+                                alt=""
+                            />
+                            <div class="product-info flex flex-col gap-2">
+                                <h3
+                                    class="font-bold sm:absolute sm:top-4 sm:left-4"
+                                >
+                                    rice 01
+                                </h3>
+                                <p class="sm:absolute sm:top-10 sm:left-4">
+                                    100 Baht
+                                </p>
+                                <button-add
+                                    class="block sm:absolute sm:right-3 sm:bottom-3"
+                                ></button-add>
+                            </div>
+                        </div>
+                        <div
+                            class="flex p-6 border-1 gap-10 sm:w-70 sm:h-fit sm:relative sm:p-0"
+                        >
+                            <img
+                                class="w-1/3 sm:w-full sm:mt-24 sm:mb-20 sm:px-8"
+                                src="https://placehold.co/400"
+                                alt=""
+                            />
+                            <div class="product-info flex flex-col gap-2">
+                                <h3
+                                    class="font-bold sm:absolute sm:top-4 sm:left-4"
+                                >
+                                    rice 02
+                                </h3>
+                                <p class="sm:absolute sm:top-10 sm:left-4">
+                                    100 Baht
+                                </p>
+                                <button-add
+                                    class="block sm:absolute sm:right-3 sm:bottom-3"
+                                ></button-add>
+                            </div>
+                        </div>
+                        <div
+                            class="flex p-6 border-1 gap-10 sm:w-70 sm:h-fit sm:relative sm:p-0"
+                        >
+                            <img
+                                class="w-1/3 sm:w-full sm:mt-24 sm:mb-20 sm:px-8"
+                                src="https://placehold.co/400"
+                                alt=""
+                            />
+                            <div class="product-info flex flex-col gap-2">
+                                <h3
+                                    class="font-bold sm:absolute sm:top-4 sm:left-4"
+                                >
+                                    rice 03
+                                </h3>
+                                <p class="sm:absolute sm:top-10 sm:left-4">
+                                    100 Baht
+                                </p>
+                                <button-add
+                                    class="block sm:absolute sm:right-3 sm:bottom-3"
+                                ></button-add>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer-bar></footer-bar>
+    </body>
+</html>
