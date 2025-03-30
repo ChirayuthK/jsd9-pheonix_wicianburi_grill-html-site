@@ -64,64 +64,121 @@
 
             <section class="flex flex-col mx-6 mb-4 sm:hidden">
                 <div class="">
+
                 <!-- Item 1 -->
+
                     <div class="rounded-lg">
-                        <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(1)">
+                        <button class="w-full flex items-center p-4 font-medium" onclick="toggleAccordion(1)">
                             <svg id="icon-1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                             <span>Description</span>
                         </button>
-                        <div id="content-1" class="hidden p-4 text-gray-700 bg-white">
+                        <div id="content-1" class="hidden p-4">
                             <ul class="list-disc list-inside">
-                                <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
-                                <li>ข้าวสดใหม่ต้นฤดู</li>
-                                <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
-                                <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
-                                <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                                <li class="py-1">ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                                <li class="py-1">ข้าวสดใหม่ต้นฤดู</li>
+                                <li class="py-1">ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                                <li class="py-1">ผลิตด้วยมาตรฐานระดับ World Class</li>
+                                <li class="py-1">อร่อยและมีความนุ่มเป็นพิเศษ</li>
                             </ul>
                         </div>
                     </div>
+
                     <!-- Item 2 -->
+
                     <div class="rounded-lg">
-                        <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(2)">
+                        <button class="w-full flex items-center p-4 font-medium" onclick="toggleAccordion(2)">
                             <svg id="icon-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                             <span>Rice Properties</span>
                         </button>
-                        <div id="content-2" class="hidden p-4 text-gray-700 bg-white">
-                            <ul class="list-disc list-inside">
-                                <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
-                                <li>ข้าวสดใหม่ต้นฤดู</li>
-                                <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
-                                <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
-                                <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
-                            </ul>
+                        <div id="content-2" class="tab-content hidden p-4">
+                            <!-- Rating Component -->
+                            <div class="pr-4">
+
+                                <!-- กลิ่นหอม -->
+                                <div class="flex items-center mb-3">
+                                <span class="w-20">กลิ่นหอม</span>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+
+                                <!-- รสชาติ -->
+                                <div class="flex items-center mb-3">
+                                <span class="w-20">รสชาติ</span>
+                                <div class="flex space-x-1">
+                                    <!-- Stars -->
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+
+                                <!-- ความนุ่ม -->
+                                <div class="flex items-center mb-3">
+                                <span class="w-20">ความนุ่ม</span>
+                                <div class="flex space-x-1">
+                                    <!-- Stars -->
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+
+                                <!-- ไฟเบอร์ -->
+                                <div class="flex items-center">
+                                <span class="w-20">ไฟเบอร์</span>
+                                <div class="flex space-x-1">
+                                    <!-- No Stars -->
+                                    <svg class="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Item 3 -->
                     <div class="rounded-lg">
-                        <button class="w-full flex items-center p-4 text-gray-800 font-medium" onclick="toggleAccordion(3)">
+                        <button class="w-full flex items-center p-4 font-medium" onclick="toggleAccordion(3)">
                             <svg id="icon-3" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                             <span>Review</span>
                         </button>
-                        <div id="content-3" class="hidden p-4 text-gray-700 bg-white">
-                            <ul class="list-disc list-inside">
-                                <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
-                                <li>ข้าวสดใหม่ต้นฤดู</li>
-                                <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
-                                <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
-                                <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
-                            </ul>
+                        <div id="content-3" class="hidden p-4">
+                            <!-- review -->
+                            <div>
+                                <h2 class="text-2xl font-bold mb-4">Write a Review</h2>
+                                <textarea name="" id="" class="w-full p-3 border rounded" rows="4" placeholder="Write your review here"></textarea>
+                                <button-main class="my-2 py-2 rounded-md">Submit Review</button-main>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Tabs -->
+            <!-- Tabs navigation -->
 
             <section class="hidden sm:flex flex-col max-w-4xl mx-auto ">
                 <div class="flex">
@@ -131,22 +188,90 @@
                 </div>
             
                 <!-- Tab Content -->
+
                 <div id="description" class="tab-content mt-4">
                   <ul class="list-disc list-inside">
-                    <li>ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
-                    <li>ข้าวสดใหม่ต้นฤดู</li>
-                    <li>ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
-                    <li>ผลิตด้วยมาตรฐานระดับ World Class</li>
-                    <li>อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                    <li class="py-1">ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                    <li class="py-1">ข้าวสดใหม่ต้นฤดู</li>
+                    <li class="py-1">ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                    <li class="py-1">ผลิตด้วยมาตรฐานระดับ World Class</li>
+                    <li class="py-1">อร่อยและมีความนุ่มเป็นพิเศษ</li>
                   </ul>
                 </div>
             
-                <div id="properties" class="tab-content mt-4 hidden">
-                  <p class="">ข้อมูลเกี่ยวกับคุณสมบัติของข้าว เช่น ความหอม ความนุ่ม และการดูดซึมน้ำ</p>
+                <!-- Rating Component -->
+
+                <div id="properties" class="tab-content hidden">
+                    <div class="pr-4 py-4">
+                        <!-- กลิ่นหอม -->
+                        <div class="flex items-center mb-3">
+                        <span class="w-20">กลิ่นหอม</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+
+                        <!-- รสชาติ -->
+                        <div class="flex items-center mb-3">
+                        <span class="w-20">รสชาติ</span>
+                        <div class="flex space-x-1">
+                            <!-- Stars -->
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+
+                        <!-- ความนุ่ม -->
+                        <div class="flex items-center mb-3">
+                        <span class="w-20">ความนุ่ม</span>
+                        <div class="flex space-x-1">
+                            <!-- Stars -->
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+
+                        <!-- ไฟเบอร์ -->
+                        <div class="flex items-center">
+                        <span class="w-20">ไฟเบอร์</span>
+                        <div class="flex space-x-1">
+                            <!-- No Stars -->
+                            <svg class="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            
+
+                <!-- Review Component -->
+
                 <div id="review" class="tab-content mt-4 hidden">
-                  <p class="">รีวิวจากผู้ใช้งาน เช่น "ข้าวคุณภาพดีมาก", "หอมและนุ่มมาก"</p>
+                  <!-- Review Section -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Write a Review</h2>
+                        <textarea name="" id="" class="w-full p-3 border rounded" rows="4" placeholder="Write your review here"></textarea>
+                        <button-main class="my-2 py-2 rounded-md">Submit Review</button-main>
+                    </div>
                 </div>
             </section>
 
@@ -246,11 +371,11 @@
                     </article> 
                 </div>
              </section>
-
         </main>
         <footer-bar></footer-bar>
 
         <script>
+            // Accordion
             function toggleAccordion(index) {
               const content = document.getElementById(`content-${index}`);
               const icon = document.getElementById(`icon-${index}`);
@@ -258,18 +383,19 @@
               icon.classList.toggle('rotate-180');
             }
 
+            // tab navigation
             const tabButtons = document.querySelectorAll('.tab-btn');
             const tabContents = document.querySelectorAll('.tab-content');
         
             tabButtons.forEach(button => {
               button.addEventListener('click', () => {
                 // Remove active state from all buttons
-                tabButtons.forEach(btn => btn.classList.remove('border-blue-600', 'text-blue-600'));
+                tabButtons.forEach(btn => btn.classList.remove('border-[#FF9F00]', 'text-[#FF9F00]'));
                 // Hide all contents
                 tabContents.forEach(content => content.classList.add('hidden'));
         
                 // Activate the current tab
-                button.classList.add('border-blue-600', 'text-blue-600');
+                button.classList.add('border-[#FF9F00]', 'text-[#FF9F00]');
                 document.getElementById(button.dataset.tab).classList.remove('hidden');
               });
             });
