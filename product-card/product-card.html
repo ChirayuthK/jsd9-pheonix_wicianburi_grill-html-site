@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ข้าวกล้อง | All Rice</title>
+        <link
+            rel="shortcut icon"
+            href="assets/logo-all_rice-white.svg"
+            type="image/x-icon"
+        />
+        <link href="/src/styles.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <script type="module" src="/src/main.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/46a3da17ee.js"
+            crossorigin="anonymous"
+        ></script>
+</head>
+<body>
+  <nav-bar></nav-bar>
+        <main>
+
+            <!-- product-card -->
+
+            <section class="flex justify-center">
+                <div class="sm:grid grid-cols-2 w-4xl mx-6">
+                    <img src="public/assets/ข้าวไรซ์เบอร์รี่.webp" alt="" class="w-auto h-auto sm:my-6">
+                    <div class="mx-8 my-6 sm:px-6">
+                        <ul class="flex">
+                            <li><a href="" class="text-sm">Home/</a></li>
+                            <li><a href="" class="text-sm">Product/</a></li>
+                            <li><a href="" class="text-sm">Rice</a></li>
+                        </ul>
+                        <h2 class="text-3xl font-medium mt-4 mb-2">Rice</h2>
+                        <h3 class="text-2xl font-medium">Price</h3>
+                        <ul>
+                            <li class="my-4">Same or Next Day Delivery</li>
+                            <li class="mb-4">Easy 7 Returns</li>
+                            <li class="mb-4">Available for Delivery</li>
+                        </ul>
+                        <div class="flex items-center mt-2 mb-6 border border-gray-300 rounded-md w-fit">
+                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-r border-gray-300">
+                                -
+                            </button>
+                            <div class="w-12 h-12 flex justify-center items-center text-center">0</div>
+                            <button class="w-8 h-12 flex justify-center items-center text-gray-600 hover:text-gray-800 border-l border-gray-300">
+                                +
+                            </button>
+                        </div>
+                        <button-main class="mb-4 text-lg font-semibold">Add to cart</button-main>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Accordion decription/rice properties/review -->
+
+            <section class="flex flex-col mx-6 mb-4 sm:hidden">
+                <div class="">
+
+                <!-- Item 1 -->
+
+                    <div class="rounded-lg">
+                        <button class="w-full flex items-center p-4 font-medium" onclick="toggleAccordion(1)">
+                            <svg id="icon-1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span>Description</span>
+                        </button>
+                        <div id="content-1" class="hidden p-4">
+                            <ul class="list-disc list-inside">
+                                <li class="py-1">ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                                <li class="py-1">ข้าวสดใหม่ต้นฤดู</li>
+                                <li class="py-1">ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                                <li class="py-1">ผลิตด้วยมาตรฐานระดับ World Class</li>
+                                <li class="py-1">อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+
+                    <div class="rounded-lg">
+                        <button class="w-full flex items-center p-4 font-medium" onclick="toggleAccordion(2)">
+                            <svg id="icon-2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span>Rice Properties</span>
+                        </button>
+                        <div id="content-2" class="tab-content hidden p-4">
+                            <!-- Rating Component -->
+                            <div class="pr-4">
+
+                                <!-- กลิ่นหอม -->
+                                <div class="flex items-center mb-3">
+                                <span class="w-20">กลิ่นหอม</span>
+                                <div class="flex space-x-1">
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+
+                                <!-- รสชาติ -->
+                                <div class="flex items-center mb-3">
+                                <span class="w-20">รสชาติ</span>
+                                <div class="flex space-x-1">
+                                    <!-- Stars -->
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+
+                                <!-- ความนุ่ม -->
+                                <div class="flex items-center mb-3">
+                                <span class="w-20">ความนุ่ม</span>
+                                <div class="flex space-x-1">
+                                    <!-- Stars -->
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+
+                                <!-- ไฟเบอร์ -->
+                                <div class="flex items-center">
+                                <span class="w-20">ไฟเบอร์</span>
+                                <div class="flex space-x-1">
+                                    <!-- No Stars -->
+                                    <svg class="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                                    </svg>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="rounded-lg">
+                        <button class="w-full flex items-center p-4 font-medium" onclick="toggleAccordion(3)">
+                            <svg id="icon-3" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span>Review</span>
+                        </button>
+                        <div id="content-3" class="hidden p-4">
+                            <!-- review -->
+                            <div>
+                                <h2 class="text-2xl font-bold mb-4">Write a Review</h2>
+                                <textarea name="" id="" class="w-full p-3 border rounded" rows="4" placeholder="Write your review here"></textarea>
+                                <button-main class="my-2 py-2 rounded-md">Submit Review</button-main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tabs navigation -->
+
+            <section class="hidden sm:flex flex-col max-w-4xl mx-auto ">
+                <div class="flex">
+                  <button class="tab-btn py-4 hover:text-[#FF9F00]" data-tab="description">Description</button>
+                  <button class="tab-btn px-8 py-4 hover:text-[#FF9F00]" data-tab="properties">Rice Properties</button>
+                  <button class="tab-btn py-4 hover:text-[#FF9F00]" data-tab="review">Review</button>
+                </div>
+            
+                <!-- Tab Content -->
+
+                <div id="description" class="tab-content mt-4">
+                  <ul class="list-disc list-inside">
+                    <li class="py-1">ข้าวหอมมะลิไทย 100% คุณภาพดี</li>
+                    <li class="py-1">ข้าวสดใหม่ต้นฤดู</li>
+                    <li class="py-1">ใช้กรรมวิธีทำให้ข้าวสะอาดที่สุด</li>
+                    <li class="py-1">ผลิตด้วยมาตรฐานระดับ World Class</li>
+                    <li class="py-1">อร่อยและมีความนุ่มเป็นพิเศษ</li>
+                  </ul>
+                </div>
+            
+                <!-- Rating Component -->
+
+                <div id="properties" class="tab-content hidden">
+                    <div class="pr-4 py-4">
+                        <!-- กลิ่นหอม -->
+                        <div class="flex items-center mb-3">
+                        <span class="w-20">กลิ่นหอม</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+
+                        <!-- รสชาติ -->
+                        <div class="flex items-center mb-3">
+                        <span class="w-20">รสชาติ</span>
+                        <div class="flex space-x-1">
+                            <!-- Stars -->
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+
+                        <!-- ความนุ่ม -->
+                        <div class="flex items-center mb-3">
+                        <span class="w-20">ความนุ่ม</span>
+                        <div class="flex space-x-1">
+                            <!-- Stars -->
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+
+                        <!-- ไฟเบอร์ -->
+                        <div class="flex items-center">
+                        <span class="w-20">ไฟเบอร์</span>
+                        <div class="flex space-x-1">
+                            <!-- No Stars -->
+                            <svg class="w-5 h-5 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.825 1.518 8.284-7.454-4.107-7.454 4.107 1.518-8.284-6.064-5.825 8.332-1.151z"/>
+                            </svg>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Component -->
+
+                <div id="review" class="tab-content mt-4 hidden">
+                  <!-- Review Section -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Write a Review</h2>
+                        <textarea name="" id="" class="w-full p-3 border rounded" rows="4" placeholder="Write your review here"></textarea>
+                        <button-main class="my-2 py-2 rounded-md">Submit Review</button-main>
+                    </div>
+                </div>
+            </section>
+
+              <!-- section reccommended -->
+
+              <section class="sm:flex justify-center mt-15 mb-8">
+                <div class="sm:grid grid-cols-3 sm:w-4xl">
+                    <article class="flex flex-col mx-3">
+                        <h3 class="mb-4 text-base font-medium">FEATURED</h3>
+                        <div class="product-recom pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 mb-6 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </article> 
+                    <article class="flex flex-col mx-3">
+                        <h3 class="mb-4 text-base font-medium">BEST SELLER</h3>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 mb-6 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </article> 
+                    <article class="flex flex-col mx-3">
+                        <h3 class="mb-4 text-base font-medium">TOP RATE</h3>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="pr-3 py-2 mb-6 border-b-[0.2px]">
+                            <figure class="flex">
+                                <img src="/assets/ข้าวกล้อง.webp" alt="" class="w-1/4 rounded">
+                                <div class="flex flex-col justify-center items-start w-full mx-16">
+                                    <h4 class="my-2 text-sm font-semibold">Rice</h4>
+                                    <p class="text-xs font-normal">Price</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </article> 
+                </div>
+             </section>
+        </main>
+        <footer-bar></footer-bar>
+
+        <script>
+          // Accordion
+          function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+          }
+
+          // tab navigation
+          const tabButtons = document.querySelectorAll('.tab-btn');
+          const tabContents = document.querySelectorAll('.tab-content');
+      
+          tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              // Remove active state from all buttons
+              tabButtons.forEach(btn => btn.classList.remove('border-[#FF9F00]', 'text-[#FF9F00]'));
+              // Hide all contents
+              tabContents.forEach(content => content.classList.add('hidden'));
+      
+              // Activate the current tab
+              button.classList.add('border-[#FF9F00]', 'text-[#FF9F00]');
+              document.getElementById(button.dataset.tab).classList.remove('hidden');
+            });
+          });
+      </script>
+</body>
+</html>
