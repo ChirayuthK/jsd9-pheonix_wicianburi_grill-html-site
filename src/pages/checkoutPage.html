@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home Page | All Rice</title>
+        <title>Checking Out | All Rice</title>
         <link
             rel="shortcut icon"
-            href="assets/logo-all_rice-white.svg"
+            href="/public/assets/logo-all_rice-white.svg"
             type="image/x-icon"
         />
-        <link href="/src/styles.css" rel="stylesheet" />
+        <link href="/src/css/style.css" rel="stylesheet" />
         <link
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
@@ -18,7 +18,7 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
-        <script type="module" src="/src/main.js" defer></script>
+        <script type="module" src="/src/js/main.js" defer></script>
         <script
             src="https://kit.fontawesome.com/46a3da17ee.js"
             crossorigin="anonymous"
@@ -28,79 +28,188 @@
         <nav-bar></nav-bar>
         <div class="max-w-5xl mx-auto p-4 md:flex md:space-x-6 items-star">
             <div class="md:w-2/3 w-full">
-                <button class=" bg-red-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-red-700 transition mb-1.5">LOGIN</button>
+                <button
+                    class="bg-red-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-red-700 transition mb-1.5"
+                >
+                    LOGIN
+                </button>
                 <div class="w-auto border-b border-gray-300 my-2"></div>
-                <h2 class="text-2xl font-bold mb-4 text-center md:text-left">CHECKOUT</h2>
-                
+                <h2 class="text-2xl font-bold mb-4 text-center md:text-left">
+                    CHECKOUT
+                </h2>
+
                 <form class="space-y-4">
-                <div class="flex flex-col md:flex-row md:space-x-4">
-                    <div class="w-auto mb-4 md:mb-0 md:w-1/2">
-                    <label for="firstName" class="b;ock mb-1 font-medium">First Name <strong class="text-red-500">*</strong></label>
-                    <input type="text" id="firstName" name="firstName" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div class="md:w-1/2">
-                    <label for="lastName">Last Name <strong class="text-red-500">*</strong></label>
-                    <input type="text" id="lastName" name="lastName" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div> </div>
-    
-                <div>
-                    <label for="street">Street Address <strong class="text-red-500">*</strong></label>
-                    <input type="text" id="street" name="street" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div>
-                    <label for="townCity">Town/City <strong class="text-red-500">*</strong></label>
-                    <input type="text" id="townCity" name="townCity" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div>
-                    <label for="province">Province <strong class="text-red-500">*</strong></label>
-                    <input type="text" id="province" name="province" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div>
-                    <label for="postalCode">Postal Code <strong class="text-red-500">*</strong></label>
-                    <input type="text" id="postalCode" name="postalCode" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div>
-                    <label for="phone">Phone Number <strong class="text-red-500">*</strong></label>
-                    <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Enter 10-digit number" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div>
-                    <label for="email">Email Address <strong class="text-red-500">*</strong></label>
-                    <input type="email" id="email" name="email" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 ">
-                </div>
-    
-                <div>
-                    <label>
-                        <input type="checkbox" id="createAnAccount" name="createAnAccount"> Create an account?
-                    </label>
-                    <br>
-    
-                    <label>
-                        <input type="checkbox" id="shipToDifferAdd" name="shipToDifferAdd"> Ship to a different address?
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="orderNote"><p>Order Notes (optional)</p>
-                        <textarea name="orderNote" id="orderNote" rows="5" required class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4 "></textarea>
-                    </label>
-                </div></form>
+                    <div class="flex flex-col md:flex-row md:space-x-4">
+                        <div class="w-auto mb-4 md:mb-0 md:w-1/2">
+                            <label
+                                for="firstName"
+                                class="b;ock mb-1 font-medium"
+                                >First Name
+                                <strong class="text-red-500">*</strong></label
+                            >
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                required
+                                class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                            />
+                        </div>
+
+                        <div class="md:w-1/2">
+                            <label for="lastName"
+                                >Last Name
+                                <strong class="text-red-500">*</strong></label
+                            >
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                required
+                                class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="street"
+                            >Street Address
+                            <strong class="text-red-500">*</strong></label
+                        >
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            required
+                            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="townCity"
+                            >Town/City
+                            <strong class="text-red-500">*</strong></label
+                        >
+                        <input
+                            type="text"
+                            id="townCity"
+                            name="townCity"
+                            required
+                            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="province"
+                            >Province
+                            <strong class="text-red-500">*</strong></label
+                        >
+                        <input
+                            type="text"
+                            id="province"
+                            name="province"
+                            required
+                            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="postalCode"
+                            >Postal Code
+                            <strong class="text-red-500">*</strong></label
+                        >
+                        <input
+                            type="text"
+                            id="postalCode"
+                            name="postalCode"
+                            required
+                            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="phone"
+                            >Phone Number
+                            <strong class="text-red-500">*</strong></label
+                        >
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            maxlength="10"
+                            placeholder="Enter 10-digit number"
+                            required
+                            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="email"
+                            >Email Address
+                            <strong class="text-red-500">*</strong></label
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                        />
+                    </div>
+
+                    <div>
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="createAnAccount"
+                                name="createAnAccount"
+                            />
+                            Create an account?
+                        </label>
+                        <br />
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="shipToDifferAdd"
+                                name="shipToDifferAdd"
+                            />
+                            Ship to a different address?
+                        </label>
+                    </div>
+                    <br />
+                    <div>
+                        <label for="orderNote"
+                            ><p>Order Notes (optional)</p>
+                            <textarea
+                                name="orderNote"
+                                id="orderNote"
+                                rows="5"
+                                required
+                                class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-blue-600 mb-4"
+                            ></textarea>
+                        </label>
+                    </div>
+                </form>
             </div>
 
-            <div class="md:w-1/3 w-full mt-8 md:mt-0 self-start border border-green-900 bg-white p-4 rounded-lg shadow-md">
+            <div
+                class="md:w-1/3 w-full mt-8 md:mt-0 self-start border border-green-900 bg-white p-4 rounded-lg shadow-md"
+            >
                 <div class="border rounded-md mb-4 px-4">
-                    <h4 class=" text-gray-800 text-lg mt-1 mb-1.5 ml-2 font-semibold uppercase">Order Summary</h4>
-                    <div class="flex justify-between items-start p-3 broder-b mb-2">
-                       <div>
-                        <span>Pure Jasmine Rice</span>
-                        <p class="text-sm text-gray-600">x 1</p>
-                       </div>
-                       <span>฿1,000</span>
+                    <h4
+                        class="text-gray-800 text-lg mt-1 mb-1.5 ml-2 font-semibold uppercase"
+                    >
+                        Order Summary
+                    </h4>
+                    <div
+                        class="flex justify-between items-start p-3 broder-b mb-2"
+                    >
+                        <div>
+                            <span>Pure Jasmine Rice</span>
+                            <p class="text-sm text-gray-600">x 1</p>
+                        </div>
+                        <span>฿1,000</span>
                     </div>
                     <div class="flex justify-between p-3 broder-b">
                         <span>Subtotal</span>
@@ -119,16 +228,22 @@
                 <div class="mb-6">
                     <p class="font-medium mb-2">Payment Method</p>
                     <label class="flex items-center mb-2">
-                        <input type="radio" name="payment" value="qr" class="mr-2 accent-blue-600" required>
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="qr"
+                            class="mr-2 accent-blue-600"
+                            required
+                        />
                         QR code Payment
                     </label>
                 </div>
 
-                <button class="w-full bg-orange-500 text-white py-3 rounded-md font-semibold hover:bg-orange-600 transition">
+                <button-main href="CompletePurchase.html" class="w-full">
                     PLACE ORDER
-                </button>
+                </button-main>
             </div>
-            </div>
+        </div>
         <footer-bar></footer-bar>
     </body>
 </html>

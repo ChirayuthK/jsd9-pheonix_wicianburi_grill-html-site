@@ -18,19 +18,19 @@ export class FooterBar extends HTMLElement {
                     <hr class="border-2 w-12 border-[#B2ABAB]" />
                     <ul class="flex flex-col gap-2 mt-4 w-3/4 sm:w-full">
                         <li class="footer-li sm:text-sm">
-                            <a href="">Privacy Policy</a>
+                            <a href="/src/pages/policy.html#privacy-policy">Privacy Policy</a>
                         </li>
                         <hr />
                         <li class="footer-li sm:text-sm">
-                            <a href="">Refund and Cancellation Policy</a>
+                            <a href="/src/pages/policy.html#refund-policy">Refund and Cancellation Policy</a>
                         </li>
                         <hr />
                         <li class="footer-li sm:text-sm">
-                            <a href="">Return Policy</a>
+                            <a href="/src/pages/policy.html#return-policy">Return Policy</a>
                         </li>
                         <hr />
                         <li class="footer-li sm:text-sm">
-                            <a href="">Shipping and Payment Policy</a>
+                            <a href="/src/pages/policy.html#shipping-payment-policy">Shipping and Payment Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -42,19 +42,19 @@ export class FooterBar extends HTMLElement {
                     <hr class="border-2 w-12 border-[#B2ABAB]" />
                     <ul class="flex flex-col gap-2 mt-4 w-3/4 sm:w-full">
                         <li class="footer-li sm:text-sm">
-                            <a href="">About Us</a>
+                            <a href="/src/pages/aboutUs.html">About Us</a>
                         </li>
                         <hr />
                         <li class="footer-li sm:text-sm">
-                            <a href="">Contact Us</a>
+                            <a href="/src/pages/contactUs.html">Contact Us</a>
                         </li>
                         <hr />
                         <li class="footer-li sm:text-sm">
-                            <a href="">Terms and Conditions</a>
+                            <a href="#">Terms and Conditions</a>
                         </li>
                         <hr />
                         <li class="footer-li sm:text-sm">
-                            <a href="">Wholesale / Bulk Buy</a>
+                            <a href="#">Wholesale / Bulk Buy</a>
                         </li>
                     </ul>
                 </div>
@@ -68,32 +68,32 @@ export class FooterBar extends HTMLElement {
                         class="flex justify-center gap-4 mt-2 w-full sm:justify-start"
                     >
                         <li>
-                            <a href=""
+                            <a href="#"
                                 ><i class="fa-brands fa-xl fa-line"></i
                             ></a>
                         </li>
                         <li>
-                            <a href=""
+                            <a href="#"
                                 ><i class="fa-brands fa-xl fa-facebook"></i
                             ></a>
                         </li>
                         <li>
-                            <a href=""
+                            <a href="#"
                                 ><i class="fa-brands fa-xl fa-tiktok"></i
                             ></a>
                         </li>
                         <li>
-                            <a href=""
+                            <a href="#"
                                 ><i class="fa-brands fa-xl fa-instagram"></i
                             ></a>
                         </li>
                         <li>
-                            <a href=""
+                            <a href="#"
                                 ><i class="fa-brands fa-xl fa-youtube"></i
                             ></a>
                         </li>
                         <li>
-                            <a href=""
+                            <a href="#"
                                 ><i class="fa-brands fa-xl fa-linkedin"></i
                             ></a>
                         </li>

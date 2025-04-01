@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home Page | All Rice</title>
+        <title>My Order</title>
         <link
             rel="shortcut icon"
-            href="assets/logo-all_rice-white.svg"
+            href="/public/assets/logo-all_rice-white.svg"
             type="image/x-icon"
         />
         <link href="/src/css/style.css" rel="stylesheet" />
@@ -26,20 +26,18 @@
     </head>
     <body>
         <nav-bar></nav-bar>
-        <button-main class="block w-1/2" href="https://www.google.com"
-            >TEST</button-main
+        <main
+            class="grid grid-cols-1 place-items-center text-center min-h-[70dvh]"
         >
-        <button-secondary class="block w-1/2" href="https://www.google.com"
-            >TEST</button-secondary
-        >
-        <button-third class="block w-1/2" href="https://www.google.com"
-            >TEST</button-third
-        >
-
-        <button-google></button-google>
-        <button-facebook></button-facebook>
-        <button-add></button-add>
-
+            <div>
+                <h1 class="text-5xl mb-16 font-bold">
+                    Thank you!<br />For purchasing with us
+                </h1>
+                <button-main href="myOrder.html" class="w-full"
+                    >View Your Order</button-main
+                >
+            </div>
+        </main>
         <footer-bar></footer-bar>
     </body>
 </html>
