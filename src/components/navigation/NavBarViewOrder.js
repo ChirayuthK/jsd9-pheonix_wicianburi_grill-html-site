@@ -5,32 +5,32 @@ export class NavBarViewOrder extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <header>  
+    <header>
       <div class="hidden md:block w-48 ml-4 p-4">
         <nav class="text-sm text-[var(--clr-gray-400)] mb-4 mt-4">
-        <a href="#" class="hover:underline">Home</a>
+        <a href="index.html" class="hover:underline">Home</a>
         <span class="mx-1"> &gt; </span>
         <span class="text-[var(--clr-secondary)] font-medium">Profile</span>
         </nav>
 
     <nav>
-      <button
-        class="w-full text-left px-4 py-2 text-[var(--clr-gray-400)] hover:text-[var(--clr-secondary)] hover:bg-[var(--clr-gray)] rounded-md cursor-pointer"
+      <a href="/src/pages/profile.html"
+        class="w-full text-left px-4 py-2 text-[var(--clr-gray-400)] hover:text-[var(--clr-secondary)] hover:bg-[var(--clr-gray)] rounded-md cursor-pointer block"
       >
         Profile
-      </button>
-      <button
-        class="w-full text-left px-4 py-2 text-[var(--clr-gray-400)] hover:text-[var(--clr-secondary)] hover:bg-[var(--clr-gray)] rounded-md cursor-pointer"
+      </a>
+      <a href="/src/pages/myOrder.html"
+        class="w-full text-left px-4 py-2 text-[var(--clr-gray-400)] hover:text-[var(--clr-secondary)] hover:bg-[var(--clr-gray)] rounded-md cursor-pointer block"
       >
         Order details
-      </button>
+      </a>
     </nav>
   </div>
 
   <div
     class="md:hidden border-b border-[var(--clr-gray)] p-4 flex items-center"
   >
-    <button class="text-[var(--clr-gray-400)] text-xl mr-4">←</button>
+    <a href="/src/pages/profile.html" class="text-[var(--clr-gray-400)] text-xl mr-4">←</a>
     <div
       class="flex-grow flex justify-around text-[var(--clr-gray-400)] text-lg font-medium relative"
     >

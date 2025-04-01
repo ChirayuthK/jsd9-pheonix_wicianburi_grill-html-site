@@ -1,129 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Order History | All Rice</title>
+        <link
+            rel="shortcut icon"
+            href="/public/assets/logo-all_rice-white.svg"
+            type="image/x-icon"
+        />
+        <link href="/src/css/style.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <script type="module" src="/src/js/main.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/46a3da17ee.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page | All Rice</title>
-  <link rel="shortcut icon" href="assets/logo-all_rice-white.svg" type="image/x-icon" />
-  <link href="/src/styles.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <script type="module" src="/src/main.js" defer></script>
-  <script src="https://kit.fontawesome.com/46a3da17ee.js" crossorigin="anonymous"></script>
-</head>
+    <body>
+        <nav-bar></nav-bar>
+        <section class="md:flex">
+            <nav-view></nav-view>
+            <main class="w-full p-6 bg-[var(--clr-primary)] min-h-screen">
+                <h2
+                    class="text-2xl font-bold text-[var(--clr-secondary)] text-center md:text-left"
+                >
+                    Order details
+                </h2>
 
-<body>
-  <nav-bar></nav-bar>
-  <section class="md:flex">
-    <nav-view></nav-view>
-    <main class="w-full p-6 bg-[var(--clr-primary)] min-h-screen">
-      <h2 class="text-2xl font-bold text-[var(--clr-secondary)] text-center md:text-left">
-        Order details
-      </h2>
+                <!-- Table for Desktop -->
+                <div class="hidden md:block">
+                    <table class="w-full border-collapse mt-4">
+                        <thead>
+                            <tr class="border-b">
+                                <th
+                                    class="text-left text-xl font-semibold py-2"
+                                >
+                                    Product
+                                </th>
+                                <th
+                                    class="text-right text-xl font-semibold py-2"
+                                >
+                                    Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b-[0.5px] border-gray-300">
+                                <td class="py-2">
+                                    Jasmine Rice: Fragrant & soft x 2
+                                </td>
+                                <td class="text-right py-2">$24</td>
+                            </tr>
+                            <tr class="border-b-[0.5px] border-gray-300">
+                                <td class="py-2">
+                                    Basmati Rice: Long-grain, fluffy x 3
+                                </td>
+                                <td class="text-right py-2">$36</td>
+                            </tr>
+                            <tr class="border-b-[0.5px] border-gray-300">
+                                <td class="py-2">
+                                    Black Rice: High in antioxidants x 1
+                                </td>
+                                <td class="text-right py-2">$15</td>
+                            </tr>
+                            <tr class="border-b-[0.5px] border-gray-300">
+                                <td class="py-2">
+                                    Red Rice: Rich in fiber x 4
+                                </td>
+                                <td class="text-right py-2">$40</td>
+                            </tr>
+                            <tr class="border-b-[0.5px] border-gray-300">
+                                <td class="py-2">
+                                    Wild Rice: Nutty & chewy x 2
+                                </td>
+                                <td class="text-right py-2">$28</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-      <!-- Table for Desktop -->
-      <div class="hidden md:block">
-        <table class="w-full border-collapse mt-4">
-          <thead>
-            <tr class="border-b">
-              <th class="text-left text-xl font-semibold py-2">Product</th>
-              <th class="text-right text-xl font-semibold py-2">Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b-[0.5px] border-gray-300">
-              <td class="py-2">Jasmine Rice: Fragrant & soft x 2</td>
-              <td class="text-right py-2">$24</td>
-            </tr>
-            <tr class="border-b-[0.5px] border-gray-300">
-              <td class="py-2">Basmati Rice: Long-grain, fluffy x 3</td>
-              <td class="text-right py-2">$36</td>
-            </tr>
-            <tr class="border-b-[0.5px] border-gray-300">
-              <td class="py-2">Black Rice: High in antioxidants x 1</td>
-              <td class="text-right py-2">$15</td>
-            </tr>
-            <tr class="border-b-[0.5px] border-gray-300">
-              <td class="py-2">Red Rice: Rich in fiber x 4</td>
-              <td class="text-right py-2">$40</td>
-            </tr>
-            <tr class="border-b-[0.5px] border-gray-300">
-              <td class="py-2">Wild Rice: Nutty & chewy x 2</td>
-              <td class="text-right py-2">$28</td>
-            </tr>
-          </tbody>
-        </table>
+                    <!-- Subtotal & Shipping Desktop -->
+                    <div class="mt-4 text-right">
+                        <p class="text-lg font-semibold">
+                            Subtotal:
+                            <span class="text-[var(--clr-secondary)]"
+                                >$143</span
+                            >
+                        </p>
+                        <p class="text-lg font-semibold">
+                            Shipping:
+                            <span class="text-[var(--clr-secondary)]">$35</span>
+                        </p>
+                    </div>
+                </div>
 
-        <!-- Subtotal & Shipping Desktop -->
-        <div class="mt-4 text-right">
-          <p class="text-lg font-semibold">
-            Subtotal: <span class="text-[var(--clr-secondary)]">$143</span>
-          </p>
-          <p class="text-lg font-semibold">
-            Shipping: <span class="text-[var(--clr-secondary)]">$35</span>
-          </p>
-        </div>
-      </div>
+                <!-- Table for Mobile -->
+                <div class="md:hidden mt-4">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b">
+                                <th
+                                    class="py-2 text-left text-xl font-semibold"
+                                >
+                                    Product
+                                </th>
+                                <th
+                                    class="py-2 text-right text-xl font-semibold"
+                                >
+                                    Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="border-t border-b border-[var(--clr-gray)]"
+                            >
+                                <td class="py-2">
+                                    Jasmine Rice: Fragrant & soft x 2
+                                </td>
+                                <td class="py-2 text-right">$24</td>
+                            </tr>
+                            <tr class="border-b border-[var(--clr-gray)]">
+                                <td class="py-2">
+                                    Basmati Rice: Long-grain, fluffy x 3
+                                </td>
+                                <td class="py-2 text-right">$36</td>
+                            </tr>
+                            <tr class="border-b border-[var(--clr-gray)]">
+                                <td class="py-2">
+                                    Black Rice: High in antioxidants x 1
+                                </td>
+                                <td class="py-2 text-right">$15</td>
+                            </tr>
+                            <tr class="border-b border-[var(--clr-gray)]">
+                                <td class="py-2">
+                                    Red Rice: Rich in fiber x 4
+                                </td>
+                                <td class="py-2 text-right">$40</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">
+                                    Wild Rice: Nutty & chewy x 2
+                                </td>
+                                <td class="py-2 text-right">$28</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-      <!-- Table for Mobile -->
-      <div class="md:hidden mt-4">
-        <table class="w-full">
-          <thead>
-            <tr class="border-b">
-              <th class="py-2 text-left text-xl font-semibold">Product</th>
-              <th class="py-2 text-right text-xl font-semibold">Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-t border-b border-[var(--clr-gray)]">
-              <td class="py-2">Jasmine Rice: Fragrant & soft x 2</td>
-              <td class="py-2 text-right">$24</td>
-            </tr>
-            <tr class="border-b border-[var(--clr-gray)]">
-              <td class="py-2">Basmati Rice: Long-grain, fluffy x 3</td>
-              <td class="py-2 text-right">$36</td>
-            </tr>
-            <tr class="border-b border-[var(--clr-gray)]">
-              <td class="py-2">Black Rice: High in antioxidants x 1</td>
-              <td class="py-2 text-right">$15</td>
-            </tr>
-            <tr class="border-b border-[var(--clr-gray)]">
-              <td class="py-2">Red Rice: Rich in fiber x 4</td>
-              <td class="py-2 text-right">$40</td>
-            </tr>
-            <tr>
-              <td class="py-2">Wild Rice: Nutty & chewy x 2</td>
-              <td class="py-2 text-right">$28</td>
-            </tr>
-          </tbody>
-        </table>
+                    <!-- Subtotal & Shipping Mobile-->
 
-        <!-- Subtotal & Shipping Mobile-->
+                    <div class="mt-4 text-right">
+                        <p class="text-lg font-semibold">
+                            Subtotal:
+                            <span class="text-[var(--clr-secondary)]"
+                                >$143</span
+                            >
+                        </p>
+                        <p class="text-lg font-semibold">
+                            Shipping:
+                            <span class="text-[var(--clr-secondary)]">$35</span>
+                        </p>
+                    </div>
+                </div>
 
-        <div class="mt-4 text-right">
-          <p class="text-lg font-semibold">
-            Subtotal: <span class="text-[var(--clr-secondary)]">$143</span>
-          </p>
-          <p class="text-lg font-semibold">
-            Shipping: <span class="text-[var(--clr-secondary)]">$35</span>
-          </p>
-        </div>
-      </div>
+                <!-- Order Again Button -->
+                <div class="mt-6 flex justify-center md:grid md:grid-cols-1">
+                    <button-main class="block w-fit">Order Again</button-main>
+                </div>
+            </main>
+        </section>
+        <footer-bar></footer-bar>
 
-      <!-- Order Again Button -->
-      <div class="mt-6 flex justify-center md:grid md:grid-cols-1">
-        <button-main class="block w-fit">Order Again</button-main>
-      </div>
-    </main>
-  </section>
-  <footer-bar></footer-bar>
-
-  <script type="module">
-    import "/src/components/navigation/NavBarViewOrder.js";
-    import "/src/components/buttons/ButtonMain.js";
-  </script>
-</body>
-
+        <script type="module">
+            import "/src/components/navigation/NavBarViewOrder.js";
+            import "/src/components/buttons/ButtonMain.js";
+        </script>
+    </body>
 </html>
