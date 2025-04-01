@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Cart | All Rice</title>
+        <link
+            rel="shortcut icon"
+            href="/public/assets/logo-all_rice-white.svg"
+            type="image/x-icon"
+        />
+        <link href="/src/css/style.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <script type="module" src="/src/js/main.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/46a3da17ee.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav-bar></nav-bar>
+        <main>
+            <section class="relative text-center mb-4 sm:m-0">
+                <span
+                    class="material-symbols-outlined absolute left-4 hover:cursor-pointer sm:opacity-0"
+                >
+                    arrow_back</span
+                >
+                <h1 class="text-2xl font-semibold sm:text-left sm:mx-8">
+                    Cart
+                </h1>
+            </section>
+            <section
+                class="mb-4 grid grid-cols-1 sm:grid-cols-3 sm:gap-8 sm:p-8 items-start"
+            >
+                <table id="items-cart-list" class="col-span-1 sm:col-span-2">
+                    <thead class="h-20 text-center text-lg uppercase">
+                        <tr>
+                            <th class="text-left">Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="h-fit">
+                        <tr class="border-t-4 border-gray-200">
+                            <td class="inline-flex items-center gap-4 p-4">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id=""
+                                    class="w-4"
+                                />
+                                <img
+                                    src="https://placehold.co/400x400"
+                                    class="w-1/5"
+                                    alt=""
+                                />
+                                <p>Pure Jasmine Rice - 10KG</p>
+                            </td>
+                            <td class="text-center">100THB</td>
+                            <td
+                                class="inline-flex flex-row w-full justify-center"
+                            >
+                                <button
+                                    class="border-1 py-1 px-2.5 h-8 border-gray-300 hover:cursor-pointer hover:bg-gray-200 rounded-tl-md rounded-bl-md"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    type="text"
+                                    id="item-1"
+                                    class="py-1 h-8 border-y-1 border-gray-300 text-center w-10"
+                                    value="1"
+                                />
+                                <button
+                                    class="border-1 py-1 px-2.5 h-8 border-gray-300 hover:cursor-pointer hover:bg-gray-200 rounded-tr-md rounded-br-md"
+                                >
+                                    +
+                                </button>
+                            </td>
+                            <td class="text-center">1000 THB</td>
+                        </tr>
+                        <tr class="border-t-4 border-gray-200">
+                            <td class="inline-flex items-center gap-4 p-4">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id=""
+                                    class="w-4"
+                                />
+                                <img
+                                    src="https://placehold.co/400x400"
+                                    class="w-1/5"
+                                    alt=""
+                                />
+                                <p>Pure Jasmine Rice - 10KG</p>
+                            </td>
+                            <td class="text-center">100THB</td>
+                            <td
+                                class="inline-flex flex-row w-full justify-center"
+                            >
+                                <button
+                                    class="border-1 py-1 px-2.5 h-8 border-gray-300 hover:cursor-pointer hover:bg-gray-200 rounded-tl-md rounded-bl-md"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    type="text"
+                                    id="item-1"
+                                    class="py-1 h-8 border-y-1 border-gray-300 text-center w-10"
+                                    value="1"
+                                />
+                                <button
+                                    class="border-1 py-1 px-2.5 h-8 border-gray-300 hover:cursor-pointer hover:bg-gray-200 rounded-tr-md rounded-br-md"
+                                >
+                                    +
+                                </button>
+                            </td>
+                            <td class="text-center">1000 THB</td>
+                        </tr>
+                        <tr class="border-t-4 border-gray-200">
+                            <td class="inline-flex items-center gap-4 p-4">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id=""
+                                    class="w-4"
+                                />
+                                <img
+                                    src="https://placehold.co/400x400"
+                                    class="w-1/5"
+                                    alt=""
+                                />
+                                <p>Pure Jasmine Rice - 10KG</p>
+                            </td>
+                            <td class="text-center">100THB</td>
+                            <td
+                                class="inline-flex flex-row w-full justify-center"
+                            >
+                                <button
+                                    class="border-1 py-1 px-2.5 h-8 border-gray-300 hover:cursor-pointer hover:bg-gray-200 rounded-tl-md rounded-bl-md"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    type="text"
+                                    id="item-1"
+                                    class="py-1 h-8 border-y-1 border-gray-300 text-center w-10"
+                                    value="1"
+                                />
+                                <button
+                                    class="border-1 py-1 px-2.5 h-8 border-gray-300 hover:cursor-pointer hover:bg-gray-200 rounded-tr-md rounded-br-md"
+                                >
+                                    +
+                                </button>
+                            </td>
+                            <td class="text-center">1000 THB</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-span-1">
+                    <table class="text-left w-full text-lg">
+                        <thead class="h-20 text-lg uppercase">
+                            <th colspan="2">Cart Total</th>
+                        </thead>
+                        <tbody>
+                            <tr
+                                class="flex justify-between border-t-4 border-gray-200 p-4"
+                            >
+                                <td>Subtotal</td>
+                                <td>300 thb</td>
+                            </tr>
+                            <tr
+                                class="flex justify-between border-t-4 border-gray-200 p-4"
+                            >
+                                <td>Shipping</td>
+                                <td>Address</td>
+                            </tr>
+                            <tr
+                                class="flex justify-between border-t-4 border-gray-200 p-4"
+                            >
+                                <td>Total</td>
+                                <td>3,000 thb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button-main
+                        href="checkoutPage.html"
+                        class="w-full uppercase mb-8"
+                        >Proceed to checkout</button-main
+                    >
+                </div>
+            </section>
+        </main>
+        <footer-bar></footer-bar>
+    </body>
+</html>

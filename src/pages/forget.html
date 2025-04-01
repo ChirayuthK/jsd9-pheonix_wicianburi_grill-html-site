@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forgot Your Password | All Rice</title>
+        <link
+            rel="shortcut icon"
+            href="/public/assets/logo-all_rice-white.svg"
+            type="image/x-icon"
+        />
+        <link href="/src/css/style.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <script type="module" src="/src/js/main.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/46a3da17ee.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body class="bg-[var(--clr-white)] flex flex-col h-fit">
+        <!-- Header with Nav -->
+        <nav-bar></nav-bar>
+
+        <!-- Main Content -->
+        <main class="mt-12 flex flex-1 items-center justify-center">
+            <div
+                class="shadow-lg bg-[var(--clr-gray)] p-10 rounded-lg w-full max-w-2xl mx-6"
+            >
+                <h1 class="text-5xl font-bold text-center text-[var(--clr-)]">
+                    Reset your password
+                </h1>
+                <p class="text-lg text-center text-[var(--clr-secondary)] mt-4">
+                    We will send you an email to reset your password.
+                </p>
+                <form class="mt-8 space-y-6">
+                    <label
+                        class="block text-lg font-medium text-[var(--clr-secondary)]"
+                        >Email</label
+                    >
+                    <input
+                        type="email"
+                        placeholder="Example@email.com"
+                        class="w-full p-2 rounded-md bg-[var(--clr-white)] text-[var(--clr-secondary)]"
+                    />
+                    <button-main class="block w-full"
+                        >Reset Password</button-main
+                    >
+                </form>
+                <div class="text-center mt-6">
+                    <a
+                        href="/src/pages/login.html"
+                        class="text-[var(--clr-blue-600)] text-lg"
+                        >Cancel</a
+                    >
+                </div>
+            </div>
+        </main>
+        <script type="module">
+            import "/src/components/navigation/NavBar.js";
+            import "/src/components/buttons/ButtonMain.js";
+        </script>
+    </body>
+</html>
