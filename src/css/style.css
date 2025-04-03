@@ -10,18 +10,34 @@
   --clr-white: #FCFCFC;
   --clr-gray-400: #888;
   --clr-blue-600: #1877F2;
-  --ff-main: 'Inter', 'sans-serif'
+  /* --ff-main: 'Inter', 'sans-serif' */
   --ff-thai: "Noto Sans Thai", sans-serif;
 }
 
 @layer base {
   body {
-    font-family: var(--ff-main);
+    /* font-family: var(--ff-main); */
     font-family: var(--ff-thai);
     background-color: var(--clr-primary)
   }
   footer {
     background-color: var(--clr-gray);
+  }
+
+  h1 {
+    @apply leading-12 text-[3rem] sm:leading-18 sm:text-[4rem] font-bold;
+  }
+
+  /* h2 {
+    @apply text-[2.25rem] font-bold sm:text-[3.25rem];
+  } */
+
+  /* h3 {
+    @apply text-[1.75rem] font-bold sm:text-[2.75rem];
+  } */
+
+  p {
+    font-size: 1rem;
   }
 }
 
