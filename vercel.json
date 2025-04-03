@@ -1,0 +1,12 @@
+{
+    "outputDirectory": "dist",
+    "rewrites": [
+      { "source": "/aboutUs", "destination": "/src/pages/aboutUs.html" },
+      { "source": "/contactUs", "destination": "/src/pages/contactUs.html" },
+      { "source": "/product-list", "destination": "/src/pages/product-list.html" },
+      { "source": "/cart", "destination": "/src/pages/cart.html" },
+      { "source": "/login", "destination": "/src/pages/login.html" },
+      { "source": "/", "destination": "/index.html" }
+    ]
+  }
+  
